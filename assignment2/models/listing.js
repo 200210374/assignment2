@@ -6,8 +6,10 @@ var Schema = mongoose.Schema;
 var listingSchema = new Schema({
     name: String,
     address: { type: String, required: true, unique: true },
+    Type: { type: String, required: true, unique: true },
     owner: { type: String, required: true, unique: true },
-    contact: { type: String, required: true, unique: true }
+    contact: { type: String, required: true, unique: true },
+    opening: { type: String, required: true, unique: true }
 
 });
 

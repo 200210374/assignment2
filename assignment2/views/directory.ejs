@@ -44,6 +44,10 @@ THis will be the business directory lissting page
         <td><%= directory[i].name %></td>
         <td><%= directory[i].Type %></td>
         <td><%= directory[i].Owner %></td>
+        <td><%= directory[i].Opening %></td>
+
+        //need to change
+        <td><a href="/directory/<%= directory[i]._id %>">Add</a></td>
         <td><a href="/directory/<%= directory[i]._id %>">Edit</a></td>
         <td><a href="/directory/delete/<%= directory[i]._id %>" class="confirmation">Delete</a></td>
     </tr>
